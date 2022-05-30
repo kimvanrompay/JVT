@@ -1,0 +1,65 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bedrijf: MyString
+  titel: MyString
+  keywords: MyString
+  h1: MyString
+  subh1: MyString
+  content: MyText
+  f1: MyString
+  f2: MyString
+  f3: MyString
+  p1: MyString
+  p2: MyString
+  p3: MyString
+  a1: MyString
+  a2: MyString
+  a3: MyString
+  m1: MyString
+  m2: MyString
+  m3: MyString
+  q1: MyString
+  q2: MyString
+  q3: MyString
+  sector: MyString
+  functie: MyString
+  postcode: 1
+  stad: MyString
+  opleiding: MyString
+  ervaring: 1
+  talen: MyString
+  utm: MyString
+  link: MyString
+
+two:
+  bedrijf: MyString
+  titel: MyString
+  keywords: MyString
+  h1: MyString
+  subh1: MyString
+  content: MyText
+  f1: MyString
+  f2: MyString
+  f3: MyString
+  p1: MyString
+  p2: MyString
+  p3: MyString
+  a1: MyString
+  a2: MyString
+  a3: MyString
+  m1: MyString
+  m2: MyString
+  m3: MyString
+  q1: MyString
+  q2: MyString
+  q3: MyString
+  sector: MyString
+  functie: MyString
+  postcode: 1
+  stad: MyString
+  opleiding: MyString
+  ervaring: 1
+  talen: MyString
+  utm: MyString
+  link: MyString

@@ -1,0 +1,157 @@
+<div id="<%= dom_id job %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Bedrijf:</strong>
+    <%= job.bedrijf %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Titel:</strong>
+    <%= job.titel %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Keywords:</strong>
+    <%= job.keywords %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">H1:</strong>
+    <%= job.h1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Subh1:</strong>
+    <%= job.subh1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Content:</strong>
+    <%= job.content %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">F1:</strong>
+    <%= job.f1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">F2:</strong>
+    <%= job.f2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">F3:</strong>
+    <%= job.f3 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">P1:</strong>
+    <%= job.p1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">P2:</strong>
+    <%= job.p2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">P3:</strong>
+    <%= job.p3 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">A1:</strong>
+    <%= job.a1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">A2:</strong>
+    <%= job.a2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">A3:</strong>
+    <%= job.a3 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">M1:</strong>
+    <%= job.m1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">M2:</strong>
+    <%= job.m2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">M3:</strong>
+    <%= job.m3 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Q1:</strong>
+    <%= job.q1 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Q2:</strong>
+    <%= job.q2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Q3:</strong>
+    <%= job.q3 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Sector:</strong>
+    <%= job.sector %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Functie:</strong>
+    <%= job.functie %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Postcode:</strong>
+    <%= job.postcode %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Stad:</strong>
+    <%= job.stad %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Opleiding:</strong>
+    <%= job.opleiding %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ervaring:</strong>
+    <%= job.ervaring %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Talen:</strong>
+    <%= job.talen %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Utm:</strong>
+    <%= job.utm %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Link:</strong>
+    <%= job.link %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this job", job, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this job', edit_job_path(job), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
