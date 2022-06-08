@@ -81,7 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: jobsvoortechniekers
+  database: jvt_production
   host: <%= ENV["RDS_HOST"] %>
   password: <%= ENV["RDS_PASSWORD"] %>
   username: <%= ENV["RDS_USERNAME"] %>
