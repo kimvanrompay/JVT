@@ -14,7 +14,7 @@ set :use_sudo, false
 
 # set :puma_service_unit_env_file, '/etc/environment'
 set :puma_service_unit_env_vars, [
-  "RDS_HOST=%s" % [$RDS_HOST],
+  "RDS_HOST=%s" % [$PATH],
   "RDS_PASSWORD=%s" % [ENV['RDS_PASSWORD']],
   "RDS_USERNAME=%s" % [ENV['RDS_USERNAME']],
   "RDS_DATABASE=%s" % [ENV['RDS_DATABASE']]
