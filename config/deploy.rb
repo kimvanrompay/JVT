@@ -2,14 +2,6 @@
 lock "~> 3.17.0"
 
 
-# set :puma_service_unit_env_file, '/etc/environment'
-set :puma_service_unit_env_vars, [
-  "RDS_HOST=%s" % [ENV['RDS_HOST']],
-  "RDS_PASSWORD=%s" % [ENV['RDS_PASSWORD']],
-  "RDS_USERNAME=%s" % [ENV['RDS_USERNAME']],
-  "RDS_DATABASE=%s" % [ENV['RDS_DATABASE']]
-]
-
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/rails/deploy/jobsvoortechniekers"
 set :application, "jobsvoortechniekers"
@@ -19,6 +11,14 @@ set :rails_env, :production
 set :stage, :production
 set :user, "rails"
 set :use_sudo, false
+
+# set :puma_service_unit_env_file, '/etc/environment'
+set :puma_service_unit_env_vars, [
+  "RDS_HOST=%s" % [ENV['RDS_HOST']],
+  "RDS_PASSWORD=%s" % [ENV['RDS_PASSWORD']],
+  "RDS_USERNAME=%s" % [ENV['RDS_USERNAME']],
+  "RDS_DATABASE=%s" % [ENV['RDS_DATABASE']]
+]
 
 ####
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/puma.sock"
