@@ -32,6 +32,7 @@ set :puma_error_log,  "#{release_path}/log/puma.error.log"
 ### if your nginx server configuration is not located in /etc/nginx, you may need to customize: ###
 # set :nginx_sites_available_path, "/etc/nginx/conf.d"
 set :nginx_sites_enabled_path, "/etc/nginx/conf.d"
+set :nginx_config_name, "#{fetch(:application)}_#{fetch(:stage)}.conf"
 
 # append :rvm_map_bins, 'puma', 'pumactl'
 
