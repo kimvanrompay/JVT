@@ -10,7 +10,7 @@ set :repo_url, "git@github.com:kimvanrompay/JVT.git"
 set :rails_env, :production
 set :stage, :production
 set :user, "rails"
-set :use_sudo, true
+set :use_sudo, false
 
 # set :puma_service_unit_env_file, '/etc/environment'
 set :puma_service_unit_env_vars, [
