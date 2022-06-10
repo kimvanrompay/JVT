@@ -59,4 +59,4 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-server "13.37.224.153", user: "rails", roles: %w{web app db}
+server "172.31.10.25", user: "rails", roles: %w{web app db}
