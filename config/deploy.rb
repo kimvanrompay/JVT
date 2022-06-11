@@ -9,12 +9,11 @@ set :repo_url, "git@github.com:kimvanrompay/JVT.git"
 # set :puma_conf, "{shared_path}/config/puma.rb"
 set :rails_env, :production
 set :stage, :production
-set :user, "rails"
+set :user, "ec2-user"
 set :use_sudo, false
 
 # set :puma_service_unit_env_file, '/etc/environment'
 set :puma_service_unit_env_vars, [
-	$PATH,
   "RDS_HOST=%s" % [ENV['RDS_HOST']],
   "RDS_PASSWORD=%s" % [ENV['RDS_PASSWORD']],
   "RDS_USERNAME=%s" % [ENV['RDS_USERNAME']],
