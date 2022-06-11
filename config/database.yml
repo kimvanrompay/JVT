@@ -82,6 +82,6 @@ test:
 production:
   <<: *default
   database: jvt_production
-  host: Rails.application.credentials.production[:RDS_HOST] # <%= ENV["RDS_HOST"] %>
-  password: Rails.application.credentials.production[:RDS_PASSWORD] # <%= ENV["RDS_PASSWORD"] %>
-  username: Rails.application.credentials.production[:RDS_USERNAME] # <%= ENV["RDS_USERNAME"] %>
+  host: <%= Rails.application.credentials.production[:RDS_HOST] %> # <%= ENV["RDS_HOST"] %>
+  password: <%= Rails.application.credentials.production[:RDS_PASSWORD] %> # <%= ENV["RDS_PASSWORD"] %>
+  username: <%= Rails.application.credentials.production[:RDS_USERNAME] %> # <%= ENV["RDS_USERNAME"] %>
