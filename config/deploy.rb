@@ -14,12 +14,13 @@ set :use_sudo, false
 
 # set :puma_service_unit_env_file, '/etc/environment'
 # THE BELOW ENV VARS ARE NOT SET ON THE PRODUCTION SERVER and should be removed
-set :puma_service_unit_env_vars, [
-  "RDS_HOST=%s" % [ENV['RDS_HOST']],
-  "RDS_PASSWORD=%s" % [ENV['RDS_PASSWORD']],
-  "RDS_USERNAME=%s" % [ENV['RDS_USERNAME']],
-  "RDS_DATABASE=%s" % [ENV['RDS_DATABASE']]
-] # # WE USE INSTEAD: EDITOR=vim rails credentials:edit; this is created an encrypted file with vars
+# set :puma_service_unit_env_vars, [
+#  "RDS_HOST=%s" % [ENV['RDS_HOST']],
+#  "RDS_PASSWORD=%s" % [ENV['RDS_PASSWORD']],
+#  "RDS_USERNAME=%s" % [ENV['RDS_USERNAME']],
+#  "RDS_DATABASE=%s" % [ENV['RDS_DATABASE']]
+#] 
+# WE USE INSTEAD: EDITOR=vim rails credentials:edit; this is created an encrypted file with vars
 
 ####
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/puma.sock"
